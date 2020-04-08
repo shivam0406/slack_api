@@ -28,7 +28,7 @@ public class CreateChannelTest extends BaseTest {
     public void createChannel() throws IOException {
         System.out.println("we are here to create slack channel");
         HttpPost request = new HttpPost(BASE_ENDPOINT_SLACK + "conversations.create");
-        request.addHeader("Authorization", "Bearer " + "xoxp-1044662141043-1044662141427-1061088617664-a9bb1fed51ca8aec4c3df4612c940c67");
+        request.addHeader("Authorization", "Bearer " + Token.getToken());
         request.setHeader(HttpHeaders.CONTENT_TYPE, String.valueOf(ContentType.APPLICATION_JSON));
         String value = ChannelNameGenerator.getChannelName();
         System.out.println("VALUE Is" + value);
