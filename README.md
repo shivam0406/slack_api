@@ -7,3 +7,13 @@ mvn clean test -DsuiteXmlFile=testng.xml
 
 Here we are passing xml file as a paramter. 
 
+
+Prerequiest :-
+Java8
+Maven3
+
+Reporting:-
+We are using Extent report for the reporting. 
+
+Extent report file will get generated after the code excution. 
+Path:- /target/Extent.html
