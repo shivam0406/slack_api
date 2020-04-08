@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Copilot Test suite" allow-return-values="true" >
+    <listeners>
+        <listener class-name="com.slack.utils.ExtentReporterNG"></listener>
+    </listeners>
+    <test name="Domain" allow-return-values="true" >
+        <classes>
+            <class name="com.slack.CreateChannelTest">
+                <methods>
+                    <include name="createChannel"/>
+                    <include name="joinChannel"/>
+                    <include name="renameChannel"/>
+                    <include name="getChannelList"/>
+                    <include name="archiveTheChannel"/>
+                    <include name="validateAarchivedChannel"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
